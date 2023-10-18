@@ -1,0 +1,8 @@
+# if (could not get lock /var/lib/dpkg/lock-frontend) happening do :
+-sudo killall apt apt-get
+then
+-sudo rm /var/lib/apt/lists/lock
+-sudo rm /var/cache/apt/archives/lock
+-sudo rm /var/lib/dpkg/lock*
+then
+-sudo apt update
